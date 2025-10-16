@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1760572867
+::res://::1760576239
 icon.svg::CompressedTexture2D::1833053400865457390::1760464081::1760464172::1::::<><><>0<>0<>c9503ca2af8730c62e22d8f065daba1b<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://assets/::1760557560
 ::res://assets/fonts/::1760465597
@@ -27,10 +27,10 @@ world_tileset.png::CompressedTexture2D::16842760014986772::1709935936::176055766
 ::res://assets/sprites/TileSets/::1760557669
 Decorations (32x32).png::CompressedTexture2D::6336094286661016402::1571142680::1760557669::1::::<><><>0<>0<>484a941fbbfbf81506bffd7355ab7bf7<>res://.godot/imported/Decorations (32x32).png-ff0b8f34eb63cce13c0fcfc8b132e150.ctex::
 Terrain (32x32).png::CompressedTexture2D::2060766279681916250::1571142644::1760557669::1::::<><><>0<>0<>a9c79a8b5ab33d293e5e5d3ef2bb0896<>res://.godot/imported/Terrain (32x32).png-fc75dbaad584ccb08c609bbb629c66ad.ctex::
-::res://entities/::1760564536
-player_1.gd::GDScript::4232488870325427352::1760564385::0::1::::<>CharacterBody2D<><>0<>0<><>::
-player_1.tscn::PackedScene::1255891619301175826::1760564536::0::1::::<><><>0<>0<><>::res://sprites/knight.png<>uid://b1kiqdfmog40c::::res://entities/player_1.gd
-::res://scenes/::1760564680
-menu.tscn::PackedScene::647644455550745205::1760564680::0::1::::<><><>0<>0<><>::
-stage_1.tscn::PackedScene::1394672850286892810::1760564589::0::1::::<><><>0<>0<><>::uid://r5ml7kv25x8u::::res://entities/player_1.tscn<>uid://4mirwugg8wkg::::res://assets/sprites/TileSets/Terrain (32x32).png<>uid://cwjisusu2wgn7::::res://assets/sprites/TileSets/Decorations (32x32).png
-::res://scripts/::1760554566
+::res://entities/::1760576239
+player_1.tscn::PackedScene::1255891619301175826::1760576239::0::1::::<><><>0<>0<><>::uid://b47vmepyuy7af::::res://assets/sprites/knight.png<>uid://b1kiqdfmog40c::::res://scripts/player_1.gd
+::res://scenes/::1760576233
+menu.tscn::PackedScene::647644455550745205::1760576233::0::1::::<><><>0<>0<><>::
+stage_1.tscn::PackedScene::1394672850286892810::1760574088::0::1::::<><><>0<>0<><>::uid://r5ml7kv25x8u::::res://entities/player_1.tscn<>uid://4mirwugg8wkg::::res://assets/sprites/TileSets/Terrain (32x32).png<>uid://cwjisusu2wgn7::::res://assets/sprites/TileSets/Decorations (32x32).png
+::res://scripts/::1760576239
+player_1.gd::GDScript::4232488870325427352::1760574005::0::1::::<>CharacterBody2D<><>0<>0<><>::
