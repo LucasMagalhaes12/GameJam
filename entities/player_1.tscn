@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://r5ml7kv25x8u"]
 
-[ext_resource type="Texture2D" path="res://sprites/knight.png" id="1_ch5d2"]
+[ext_resource type="Texture2D" uid="uid://b47vmepyuy7af" path="res://assets/sprites/knight.png" id="1_ch5d2"]
 [ext_resource type="Script" uid="uid://b1kiqdfmog40c" path="res://entities/player_1.gd" id="1_n0nxf"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_n0nxf"]
@@ -56,4 +56,4 @@ position = Vector2(0, -3)
 sprite_frames = SubResource("SpriteFrames_ch5d2")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.6188682
+frame_progress = 0.4904162
