@@ -1,10 +1,2 @@
-res://entities/player_1.tscn
-res://entities/player_1.gd
-res://scenes/stage_1.tscn
-res://scenes/menu.tscn
 res://scenes/game.tscn
-res://scripts/player_1.gd
-res://scripts/player_2.gd
 res://entities/player_2.tscn
-res://scripts/camera_2d.gd
-res://scripts/area_2d.gd
