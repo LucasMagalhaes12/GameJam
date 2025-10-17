@@ -1,6 +1,7 @@
 extends Camera2D
 @onready var player1: CharacterBody2D = $"../Players/player1"
 @onready var player2: CharacterBody2D = $"../Players/player2"
+@onready var game_manager: Node = $"../GameManager"
 
 @export var suavidade_movimento: float = 0.1
 @export var margem_vertical: float = 150.0
@@ -43,6 +44,8 @@ func _process(delta):
 	var centro_alvo_final = Vector2(x_posicao_fixa, y_final)
 	
 	global_position = global_position.lerp(centro_alvo_final, 1.0 - pow(suavidade_movimento, delta))
+	game_manager.set_points_score(y_limite_inferior)
+	
 	
 func get_limit_vertical() -> float:
 	return y_limite_inferior

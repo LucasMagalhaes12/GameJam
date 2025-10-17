@@ -1,11 +1,14 @@
-Camera2D
+AudioStreamPlayer2D      - Matches the "sound" keyword.
+Timer
+Label
 Node
+CanvasLayer
+AnimationPlayer
+AnimatedSprite2D
 CollisionShape2D
 Area2D
+AudioStreamPlayer2D
+Camera2D
 StaticBody2D
 TileMapLayer
 TileMap
-AnimatedSprite2D
-CharacterBody2D
-Label
-VSplitContainer

@@ -4,10 +4,12 @@ extends Area2D
 
 @onready var camera_node: Camera2D = $"../../Camera2D"
 @onready var collision_shape: CollisionShape2D = $CollisionShape2D
+@onready var timer: Timer = $Timer
 
 
 func _on_body_entered(body: Node2D):
 	print("Jogador", body.name, " caiu fora da tela!")
+	timer.start()
 
 
 func _ready():
@@ -29,3 +31,7 @@ func _process(delta):
 	if y_alvo < global_position.y:
 		global_position.y = y_alvo
 	global_position.x = camera_pos.x
+
+
+func _on_timer_timeout() -> void:
+	get_tree().reload_current_scene()
