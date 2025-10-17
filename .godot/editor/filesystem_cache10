@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1760674864
+::res://::1760675977
 default_bus_layout.tres::AudioBusLayout::977694156584357812::1760651140::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::1833053400865457390::1760464081::1760464172::1::::<><><>0<>0<>c9503ca2af8730c62e22d8f065daba1b<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://assets/::1760557560
@@ -33,18 +33,19 @@ Opening (46x56).png::CompressedTexture2D::2789686632134097776::1571103892::17606
 ::res://assets/sprites/not use/TileSets/::1760651446
 Decorations (32x32).png::CompressedTexture2D::6336094286661016402::1571142680::1760651446::1::::<><><>0<>0<>d7a9663a4a4378c74dfd10c7496a8b29<>res://.godot/imported/Decorations (32x32).png-f468bb981165a7196a2f84b3e8049a40.ctex::
 Terrain (32x32).png::CompressedTexture2D::2060766279681916250::1571142644::1760651446::1::::<><><>0<>0<>eeadc633f0ebe1790ff67cf2a7307d6f<>res://.godot/imported/Terrain (32x32).png-097efd7504835018af1d1bae7aff75e7.ctex::
-::res://entities/::1760648291
-player_1.tscn::PackedScene::1255891619301175826::1760578941::0::1::::<><><>0<>0<><>::uid://b47vmepyuy7af::::res://assets/sprites/knight.png<>uid://b1kiqdfmog40c::::res://scripts/player_1.gd
+::res://entities/::1760675369
+player_1.tscn::PackedScene::1255891619301175826::1760675369::0::1::::<><><>0<>0<><>::uid://b47vmepyuy7af::::res://assets/sprites/knight.png<>uid://b1kiqdfmog40c::::res://scripts/player_1.gd<>uid://d2pppxf7lvkr0::::res://assets/sounds/jump.wav
 player_2.tscn::PackedScene::3448443911347072609::1760648291::0::1::::<><><>0<>0<><>::uid://bscnply4gq0v2::::res://scripts/player_2.gd<>uid://b47vmepyuy7af::::res://assets/sprites/knight.png
-::res://scenes/::1760674669
-coin.gd::GDScript::4882422512886371680::1760673944::0::1::::<>Area2D<><>0<>0<><>::
-coin.tscn::PackedScene::589298567711344511::1760653086::0::1::::<><><>0<>0<><>::uid://cbtc1x8tv0uke::::res://scenes/coin.gd<>uid://2b3w261sh6fu::::res://assets/sprites/coin.png<>uid://cbikvjyj1xydt::::res://assets/sounds/coin.wav
-game.tscn::PackedScene::647644455550745205::1760674669::0::1::::<><><>0<>0<><>::uid://cug7vkhtvf3qk::::res://scripts/game_manager.gd<>uid://ifnr4abhr3q::::res://assets/sprites/not use/world_tileset.png<>uid://eqbbmge8h47u::::res://assets/sprites/not use/platforms.png<>uid://cybm0v7a3uhp4::::res://assets/fonts/PixelOperator8.ttf<>uid://r5ml7kv25x8u::::res://entities/player_1.tscn<>uid://b7mwihabnwsth::::res://scripts/camera_2d.gd<>uid://bpepmqyenwdn2::::res://entities/player_2.tscn<>uid://cle803udkayjl::::res://scripts/area_2d.gd<>uid://inpwqqh3ytcp::::res://scenes/coin.tscn<>uid://camghgcq70p86::::res://assets/fonts/PixelOperator8-Bold.ttf
+::res://scenes/::1760676051
+coin.tscn::PackedScene::589298567711344511::1760675956::0::1::::<><><>0<>0<><>::uid://cbtc1x8tv0uke::::res://scripts/coin.gd<>uid://2b3w261sh6fu::::res://assets/sprites/coin.png<>uid://cbikvjyj1xydt::::res://assets/sounds/coin.wav
+game.tscn::PackedScene::647644455550745205::1760676190::0::1::::<><><>0<>0<><>::uid://cug7vkhtvf3qk::::res://scripts/game_manager.gd<>uid://ifnr4abhr3q::::res://assets/sprites/not use/world_tileset.png<>uid://eqbbmge8h47u::::res://assets/sprites/not use/platforms.png<>uid://cybm0v7a3uhp4::::res://assets/fonts/PixelOperator8.ttf<>uid://r5ml7kv25x8u::::res://entities/player_1.tscn<>uid://b7mwihabnwsth::::res://scripts/camera_2d.gd<>uid://bpepmqyenwdn2::::res://entities/player_2.tscn<>uid://cle803udkayjl::::res://scripts/area_2d.gd<>uid://inpwqqh3ytcp::::res://scenes/coin.tscn<>uid://camghgcq70p86::::res://assets/fonts/PixelOperator8-Bold.ttf<>uid://crn6fuhxkt6d7::::res://scripts/game_state.gd
 music.tscn::PackedScene::6559740112819881520::1760651144::0::1::::<><><>0<>0<><>::uid://claulfg3bdmfl::::res://assets/sounds/time_for_adventure.mp3
 stage_1.tscn::PackedScene::1394672850286892810::1760651446::0::1::::<><><>0<>0<><>::uid://r5ml7kv25x8u::::res://entities/player_1.tscn<>uid://4mirwugg8wkg::::res://assets/sprites/not use/TileSets/Terrain (32x32).png<>uid://cwjisusu2wgn7::::res://assets/sprites/not use/TileSets/Decorations (32x32).png
-::res://scripts/::1760674669
-area_2d.gd::GDScript::5555225965729303197::1760674637::0::1::::<>Area2D<><>0<>0<><>::
+::res://scripts/::1760676051
+area_2d.gd::GDScript::5555225965729303197::1760675042::0::1::::<>Area2D<><>0<>0<><>::
 camera_2d.gd::GDScript::4658586641078100981::1760674669::0::1::::<>Camera2D<><>0<>0<><>::
-game_manager.gd::GDScript::6190985489050436018::1760674217::0::1::::<>Node<><>0<>0<><>::
-player_1.gd::GDScript::4232488870325427352::1760578516::0::1::::<>CharacterBody2D<><>0<>0<><>::
+coin.gd::GDScript::4882422512886371680::1760673944::0::1::::<>Area2D<><>0<>0<><>::
+game_manager.gd::GDScript::6190985489050436018::1760676051::0::1::::<>Node<><>0<>0<><>::
+game_state.gd::GDScript::5994780838120609242::1760675859::0::1::::<>Node<><>0<>0<><>::
+player_1.gd::GDScript::4232488870325427352::1760675442::0::1::::<>CharacterBody2D<><>0<>0<><>::
 player_2.gd::GDScript::3654765348658802377::1760578459::0::1::::<>CharacterBody2D<><>0<>0<><>::

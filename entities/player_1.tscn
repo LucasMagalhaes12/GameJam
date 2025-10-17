@@ -1,7 +1,8 @@
-[gd_scene load_steps=26 format=3 uid="uid://r5ml7kv25x8u"]
+[gd_scene load_steps=27 format=3 uid="uid://r5ml7kv25x8u"]
 
 [ext_resource type="Texture2D" uid="uid://b47vmepyuy7af" path="res://assets/sprites/knight.png" id="1_ch5d2"]
 [ext_resource type="Script" uid="uid://b1kiqdfmog40c" path="res://scripts/player_1.gd" id="1_n0nxf"]
+[ext_resource type="AudioStream" uid="uid://d2pppxf7lvkr0" path="res://assets/sounds/jump.wav" id="3_8od7a"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_n0nxf"]
 radius = 5.0
@@ -186,3 +187,7 @@ position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_ch5d2")
 animation = &"jump"
 autoplay = "idle"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_8od7a")
+bus = &"SFX"

@@ -1,0 +1,109 @@
+[gd_scene load_steps=9 format=3 uid="uid://eqhjkchnytef"]
+
+[ext_resource type="Script" uid="uid://dxo8iv2xqby2h" path="res://scripts/menu.gd" id="1_con2f"]
+[ext_resource type="FontFile" uid="uid://camghgcq70p86" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="1_yqeox"]
+[ext_resource type="FontFile" uid="uid://cybm0v7a3uhp4" path="res://assets/fonts/PixelOperator8.ttf" id="2_vjb58"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_vjb58"]
+font = ExtResource("1_yqeox")
+font_size = 32
+
+[sub_resource type="LabelSettings" id="LabelSettings_con2f"]
+font = ExtResource("1_yqeox")
+
+[sub_resource type="LabelSettings" id="LabelSettings_mhnvy"]
+line_spacing = 5.0
+font = ExtResource("2_vjb58")
+
+[sub_resource type="LabelSettings" id="LabelSettings_4ytvr"]
+font = ExtResource("1_yqeox")
+font_size = 8
+
+[sub_resource type="LabelSettings" id="LabelSettings_g3eks"]
+font = ExtResource("2_vjb58")
+font_size = 8
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_con2f")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 640.0
+offset_bottom = 360.0
+mouse_filter = 2
+color = Color(2.695322e-06, 0.75467527, 0.44915587, 1)
+
+[node name="Label" type="Label" parent="."]
+offset_right = 640.0
+offset_bottom = 142.0
+text = "Conectados"
+label_settings = SubResource("LabelSettings_vjb58")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="Label"]
+layout_mode = 0
+offset_top = 143.0
+offset_right = 640.0
+offset_bottom = 360.0
+
+[node name="main" type="VBoxContainer" parent="Label/CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="play" type="Button" parent="Label/CenterContainer/main"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Jogar"
+
+[node name="credits" type="Button" parent="Label/CenterContainer/main"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Creditos"
+
+[node name="exit" type="Button" parent="Label/CenterContainer/main"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Sair"
+
+[node name="Credits" type="VBoxContainer" parent="Label/CenterContainer"]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Title" type="Label" parent="Label/CenterContainer/Credits"]
+layout_mode = 2
+text = "Um game desenvolvido por:"
+label_settings = SubResource("LabelSettings_con2f")
+horizontal_alignment = 1
+
+[node name="Credits" type="Label" parent="Label/CenterContainer/Credits"]
+layout_mode = 2
+text = "Lucas Magalhães
+Mary Crispim
+Alisson Chaves
+Anderson Luiz
+"
+label_settings = SubResource("LabelSettings_mhnvy")
+horizontal_alignment = 1
+
+[node name="Title Assets" type="Label" parent="Label/CenterContainer/Credits"]
+layout_mode = 2
+text = "Assets:"
+label_settings = SubResource("LabelSettings_4ytvr")
+horizontal_alignment = 1
+
+[node name="link" type="Label" parent="Label/CenterContainer/Credits"]
+layout_mode = 2
+text = "https://brackeysgames.itch.io/brackeys-platformer-bundle"
+label_settings = SubResource("LabelSettings_g3eks")
+
+[node name="Back" type="Button" parent="Label/CenterContainer/Credits"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 22
+text = "Voltar"
+
+[connection signal="pressed" from="Label/CenterContainer/main/play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Label/CenterContainer/main/credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="Label/CenterContainer/main/exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="Label/CenterContainer/Credits/Back" to="." method="_on_back_pressed"]

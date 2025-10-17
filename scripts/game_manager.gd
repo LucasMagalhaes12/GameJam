@@ -6,7 +6,7 @@ extends Node
 
 var score = 0
 var coin_score = 0
-var record = 0
+#var record = 0
 
 func add_coin_score():
 	coin_score += 10
@@ -17,7 +17,7 @@ func set_points_score(score_value: float):
 	show_score()
 
 func show_score():
-	if record < score + coin_score:
-		record = score + coin_score
+	if GameState.record < score + coin_score:
+		GameState.record = score + coin_score
 	score_label.text = "PONTOS: " + str(score + coin_score)
-	record_label.text = "Recorde: " + str(record)
+	record_label.text = "Recorde: " + str(GameState.record)
