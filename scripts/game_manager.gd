@@ -21,3 +21,11 @@ func show_score():
 		GameState.record = score + coin_score
 	score_label.text = "PONTOS: " + str(score + coin_score)
 	record_label.text = "Recorde: " + str(GameState.record)
+
+
+func _on_back_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/menu.tscn") # Sair
+
+
+func _on_exit_pressed() -> void:
+	get_tree().quit()
