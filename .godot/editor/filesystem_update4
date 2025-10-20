@@ -1,10 +1,1 @@
-res://scripts/area_2d.gd
 res://scenes/game.tscn
-res://entities/player_1.tscn
-res://scripts/player_1.gd
-res://scenes/game_state.gd
-res://scenes/coin.tscn
-res://scripts/game_manager.gd
-res://scenes/menu.tscn
-res://default_bus_layout.tres
-res://scripts/menu.gd
